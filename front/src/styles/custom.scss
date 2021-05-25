@@ -1,0 +1,21 @@
+// Override default variables before the import
+// Colors
+$primary-color: #FFE600;
+$secondary-color: #999999;
+$accent-color: #333333;
+
+$light-bg-color: #EEEEEE;
+$black-color: #000000;
+$white-color: #ffffff;
+
+// fonts
+$font-size-12: .75rem;
+$font-size-14: .875rem;
+$font-size-16: 1rem;
+$font-size-18: 1.125rem;
+$font-size-24: 1.5rem;
+$font-size-28: 1.75rem;
+$font-size-46: 2.875rem;
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
