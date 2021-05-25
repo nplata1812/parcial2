@@ -5,7 +5,6 @@ import "./Card.scss";
 export const Card = (props) => {
   return (
     <div className="card card-home">
-      {/* <img src="http://http2.mlstatic.com/D_916062-MLA43654417337_102020-I.jpg" className="card-img-top" alt="iphone 11"/> */}
       <Link className="card-home-img-link" to={`/homes/${props.id}`}>
         {props.type === "house" ? (
           <img src="/home.png" className="card-home-img-top" alt="Icon Home" />
