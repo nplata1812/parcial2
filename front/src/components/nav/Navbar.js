@@ -1,9 +1,12 @@
 import React from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.scss";
 import { FormattedMessage } from "react-intl";
+import { Context } from "../../router/AppRouter";
 
 export const Navbar = ({ setLanguage }) => {
+  const context = useContext(Context);
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
@@ -29,7 +32,10 @@ export const Navbar = ({ setLanguage }) => {
               </Link>
             </div>
             <div className="navbar-nav-controls">
-             {/** here lang selector */  }
+              <select value={context.locale} onChange={context.selectLanguage}>
+                <option value="es">Español</option>
+                <option value="en">English</option>
+              </select>
             </div>
           </div>
         </div>
