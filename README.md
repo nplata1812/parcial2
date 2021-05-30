@@ -1,3 +1,8 @@
+
+## Link Despliegue
+
+https://parcial2web.herokuapp.com/
+
 ### Parcial 2
 
 Aplicación en React que consume los servicios expuestos por el API implementado en NodeJS.
